@@ -1,0 +1,152 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Npgsql/5.0.3": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "runtime": {
+          "lib/net5.0/Npgsql.dll": {
+            "assemblyVersion": "5.0.3.0",
+            "fileVersion": "5.0.3.0"
+          }
+        }
+      },
+      "Syncfusion.Data.WPF/19.1.0.54": {
+        "runtime": {
+          "lib/net5.0-windows/Syncfusion.Data.WPF.dll": {
+            "assemblyVersion": "19.1500.0.54",
+            "fileVersion": "19.1500.0.54"
+          }
+        }
+      },
+      "Syncfusion.Licensing/19.1.0.54": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.1.0.54",
+            "fileVersion": "19.1.0.54"
+          }
+        }
+      },
+      "Syncfusion.SfGrid.WPF/19.1.0.54": {
+        "dependencies": {
+          "Syncfusion.Data.WPF": "19.1.0.54",
+          "Syncfusion.Licensing": "19.1.0.54",
+          "Syncfusion.Shared.WPF": "19.1.0.54"
+        },
+        "runtime": {
+          "lib/net5.0-windows/Syncfusion.SfGrid.WPF.dll": {
+            "assemblyVersion": "19.1500.0.54",
+            "fileVersion": "19.1500.0.54"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/19.1.0.54": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.1.0.54"
+        },
+        "runtime": {
+          "lib/net5.0-windows/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "19.1500.0.54",
+            "fileVersion": "19.1500.0.54"
+          }
+        }
+      },
+      "Syncfusion.Tools.WPF/19.1.0.54": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.1.0.54",
+          "Syncfusion.Shared.WPF": "19.1.0.54"
+        },
+        "runtime": {
+          "lib/net5.0-windows/Syncfusion.Tools.WPF.dll": {
+            "assemblyVersion": "19.1500.0.54",
+            "fileVersion": "19.1500.0.54"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.46214"
+          }
+        }
+      },
+      "System.Windows.Interactivity.WPF/2.0.20525": {
+        "runtime": {
+          "lib/net40/Microsoft.Expression.Interactions.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "2.0.20525.0"
+          },
+          "lib/net40/System.Windows.Interactivity.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "2.0.20525.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Npgsql/5.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IDx2tijhyXGz7tVXQH0iGnCnW0ReSUy3UC99ytSklJKscob5WV8eLZWuT/jqYBq0l07RmZOSrdjUEDEetsgDIA==",
+      "path": "npgsql/5.0.3",
+      "hashPath": "npgsql.5.0.3.nupkg.sha512"
+    },
+    "Syncfusion.Data.WPF/19.1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JbS5SHY1s5afTaGRxkZGFgnbIJgOSfysqfY/2AcgXW8ssjgJbqeHgSLUfBqqCsb3fVhu4Xfg4t6MQFHInoXOxA==",
+      "path": "syncfusion.data.wpf/19.1.0.54",
+      "hashPath": "syncfusion.data.wpf.19.1.0.54.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8dQSVjq+P4ocJEXyQm45hv9IW5YICkuClTL2UZgNDkojBqqVHELbLhAEdyCM2Qpyh7+mg963+mXbNv3pxKWHng==",
+      "path": "syncfusion.licensing/19.1.0.54",
+      "hashPath": "syncfusion.licensing.19.1.0.54.nupkg.sha512"
+    },
+    "Syncfusion.SfGrid.WPF/19.1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V8xdIZwDaxF/dArICFUOnfWVlEhvOHPD0PgP39J/2NpZ+OYFufmAIvs+3uXKuSKDHILcm9yoVjb3YXL/9zrqCA==",
+      "path": "syncfusion.sfgrid.wpf/19.1.0.54",
+      "hashPath": "syncfusion.sfgrid.wpf.19.1.0.54.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/19.1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oHqW63wZCi4/9N0dxL3/ljbhQ5rfXYA3SdNtKPauZbCWvm+Oy22mIvaLNdMyiu0lPjTDMPnr6KZUwjhdK19qeg==",
+      "path": "syncfusion.shared.wpf/19.1.0.54",
+      "hashPath": "syncfusion.shared.wpf.19.1.0.54.nupkg.sha512"
+    },
+    "Syncfusion.Tools.WPF/19.1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0bP9YNr0uWp4EIggZRte9AmR7BtAwEuIEcwWgUef7FTfEZ4gilbW2lWMqKxgxRZUYfiQBfu3jf2ZOAAvTHXbAg==",
+      "path": "syncfusion.tools.wpf/19.1.0.54",
+      "hashPath": "syncfusion.tools.wpf.19.1.0.54.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    },
+    "System.Windows.Interactivity.WPF/2.0.20525": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0r+Le4E7hCm4zToUvBzjSUyTcuU3rFeoPa7JyTdWIzR/F7wH6+O/pWkjHIG40hIA0z1wvRdZayvoizA4wcK1dg==",
+      "path": "system.windows.interactivity.wpf/2.0.20525",
+      "hashPath": "system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
+    }
+  }
+}

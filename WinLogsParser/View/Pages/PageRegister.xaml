@@ -1,0 +1,138 @@
+﻿<Page x:Class="WinLogsParser.View.Pages.PageRegister"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:viewmodel="clr-namespace:WinLogsParser.ViewModel"
+      xmlns:view="clr-namespace:WinLogsParser.View" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d"
+        d:DesignHeight="350" d:DesignWidth="250"
+      Title="PageRegister">
+
+    <Page.DataContext>
+        <viewmodel:ViewModelRegister/>
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="1*" MinHeight="10"/>
+            <RowDefinition Height="9*" MinHeight="300" MaxHeight="510"/>
+            <RowDefinition Height="1*" MinHeight="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="10"/>
+            <ColumnDefinition Width="*" MinWidth="225" MaxWidth="382"/>
+            <ColumnDefinition Width="*" MinWidth="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="1" CornerRadius="3"
+             Background="#F5F5F5" BorderBrush="#AAAAAA">
+
+        <Grid>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="7"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Background="#FF5478A5" 
+                    CornerRadius="2,2,0,0" Margin="-1"
+                    BorderThickness="1,1,1,0" BorderBrush="#FF485D78"/>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Content="Register" Margin="10,4,10,0" FontSize="23" FontFamily="Arial"  Foreground="#66666F" FontWeight="Normal" FontStyle="Normal"/>
+
+                <StackPanel Grid.Row="1">
+                    <StackPanel Style="{StaticResource StyleStackPanel}" Margin="15,20,5,0">
+                        <Image Width="15" Height="20" Source="{Binding Path=ObjSourceImageRegister.SourceImageFirstName, Mode=TwoWay}"/>
+                        <TextBox Text="{Binding Path=ObjDataRegister.FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="20" Margin="4,0,0,0"  Style="{StaticResource StyleTextBox}" Height="25" Tag="First name*    ">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="TextChanged">
+                                    <i:InvokeCommandAction Command="{Binding TextChanged}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </TextBox>
+                    </StackPanel>
+                    <Border Height="1" Margin="15,0,15,15" Background="#66666F" />
+
+                    <StackPanel Style="{StaticResource StyleStackPanel}" Margin="15,0,5,0">
+                        <Image Width="15" Height="20" Source="{Binding Path=ObjSourceImageRegister.SourceImageLastName, Mode=TwoWay}"/>
+                        <TextBox Text="{Binding Path=ObjDataRegister.LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   MaxLength="20" Margin="4,0,0,0"  Style="{StaticResource StyleTextBox}" Height="25" Tag="Last name    ">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="TextChanged">
+                                    <i:InvokeCommandAction Command="{Binding TextChanged}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </TextBox>
+                    </StackPanel>
+                    <Border Height="1" Margin="15,0,15,15" Background="#66666F" />
+
+                    <StackPanel Style="{StaticResource StyleStackPanel}" Margin="15,0,5,0">
+                        <Image Width="15" Height="20" Source="{Binding Path=ObjSourceImageRegister.SourceImageEmail, Mode=TwoWay}"/>
+                        <TextBox Text="{Binding Path=ObjDataRegister.Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="30" Margin="4,0,0,0"  Style="{StaticResource StyleTextBox}" Height="25" Tag="Email*    ">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="TextChanged">
+                                    <i:InvokeCommandAction Command="{Binding TextChanged}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </TextBox>
+                    </StackPanel>
+                    <Border Height="1" Margin="15,0,15,15" Background="#66666F" />
+
+                    <Label Margin="35,0,15,15" Name="LabelPassword" Content="{Binding Path=ObjLabelPasswordBox.StrLabelPasswordBox, Mode=TwoWay}" VerticalAlignment="Center" Foreground="Gray" FontFamily="Arial"/>
+                    <StackPanel Style="{StaticResource StyleStackPanel}" Margin="15,-55,5,0">
+                        <Image Width="15" Height="20" Source="{Binding Path=ObjSourceImageRegister.SourceImagePassword, Mode=TwoWay}"/>
+                        <PasswordBox MaxLength="20" Margin="4,0,0,0" Name="Password" Style="{StaticResource StylePasswordBox}" Height="25" Tag="Password*    ">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PasswordChanged">
+                                    <i:InvokeCommandAction Command="{Binding PasswordChanged}" CommandParameter="{Binding ElementName=Password}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </PasswordBox>
+                    </StackPanel>
+
+                    <Border Height="1" Margin="15,-15,15,15" Background="#66666F" />
+
+                    <Button Content="Have an accaunt?" Style="{StaticResource StyleButtonQuestion}" 
+                            HorizontalAlignment="Left" Margin="15,-10,0,0">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding ClickNewPage}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+
+                </StackPanel>
+
+                <Button Grid.Row="2" Style="{StaticResource StyleButtonSgnUp}" 
+                        VerticalAlignment="Center"  Margin="30,0,30,0" Content="SIGN UP" Height="30">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding ClickSignUp}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="20" 
+                              Color="#AAAAAA" 
+                              ShadowDepth="0"/>
+        </Border.Effect>
+    </Border>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#D0D0D0" />
+                <GradientStop Color="#C0C0C0" Offset="1"/>
+                <GradientStop Color="#999999" Offset="0.408"/>
+                <GradientStop Color="#999999" Offset="0.542"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Page>

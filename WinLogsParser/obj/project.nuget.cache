@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "mKo/iDgQmcxPY4RF/m0o0q89owa0iR8KwLt8luflOPmGewgE1thX4OdKIREy9ODvPvMr4vB76+SULT9Ff6Z7dQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Klover\\Desktop\\wpf\\WinLogsParser\\WinLogsParser\\WinLogsParser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Klover\\.nuget\\packages\\npgsql\\5.0.3\\npgsql.5.0.3.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\syncfusion.data.wpf\\19.1.0.54\\syncfusion.data.wpf.19.1.0.54.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\syncfusion.licensing\\19.1.0.54\\syncfusion.licensing.19.1.0.54.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\syncfusion.sfgrid.wpf\\19.1.0.54\\syncfusion.sfgrid.wpf.19.1.0.54.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\syncfusion.shared.wpf\\19.1.0.54\\syncfusion.shared.wpf.19.1.0.54.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\syncfusion.tools.wpf\\19.1.0.54\\syncfusion.tools.wpf.19.1.0.54.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\Klover\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Windows.Interactivity.WPF 2.0.20525\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net5.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "System.Windows.Interactivity.WPF",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}
